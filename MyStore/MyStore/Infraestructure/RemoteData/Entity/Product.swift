@@ -7,6 +7,7 @@
 
 import Foundation
 struct Product: Codable {
+    
     var id: String?
     var site_id: String?
     var title: String?
@@ -33,4 +34,5 @@ struct Product: Codable {
     var catalog_listing: Bool?
     var use_thumbnail_id: Bool?
     var order_backend: Int?
+    
 }

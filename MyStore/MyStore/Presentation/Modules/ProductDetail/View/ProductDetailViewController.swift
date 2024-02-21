@@ -32,25 +32,24 @@ class ProductDetailViewController: UIViewController {
     /**
      this function execute all initial methods
      */
-    func initFunctions(){
+    func initFunctions() {
         inflateTable()
         registerCells()
         getProduct()
     }
     
-    func inflateTable(){
+    func inflateTable() {
         presenter?.getRowsTable()
     }
     
-    func getProduct(){
+    func getProduct() {
         presenter?.getProductDetail()
     }
     
     /**
      here registers all Nibs before use in the table
      */
-    func registerCells(){
-        
+    func registerCells() {
         let nibProductPrice = UINib(nibName: NibIds.productPrice.rawValue, bundle: nil)
         let nibProductAttr = UINib(nibName: NibIds.attributeProductCell.rawValue, bundle: nil)
         let nibProductImg = UINib(nibName: NibIds.productImage.rawValue, bundle: nil)

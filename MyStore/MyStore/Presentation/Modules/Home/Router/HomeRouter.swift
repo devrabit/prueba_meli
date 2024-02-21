@@ -29,12 +29,14 @@ class HomeRouter: PresenterToRouterHomeProtocol{
         
         return view
     }
+    
     /** open seeker module*/
     func openSeeker(delegate: HomePresenter, navigationController: UINavigationController) {
         let view = SeekerRouter.createModule(delegate: delegate)
 
         navigationController.present(view, animated: true, completion: nil)
     }
+    
     /** go to detail product*/
     func pushProductDetail(product: Product, navigationController: UINavigationController) {
         let view = ProductDetailRouter.createModule(product: product)

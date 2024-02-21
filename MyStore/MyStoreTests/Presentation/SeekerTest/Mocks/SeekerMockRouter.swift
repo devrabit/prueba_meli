@@ -8,7 +8,8 @@
 import UIKit
 @testable import MyStore
 
-class SeekerMockRouter: PresenterToRouterSeekerProtocol{
+class SeekerMockRouter: PresenterToRouterSeekerProtocol {
+    
     enum Invocations {
     case disapearToHomeCalled
     }
@@ -22,6 +23,5 @@ class SeekerMockRouter: PresenterToRouterSeekerProtocol{
     func disapearToHome(query: String, view: UIViewController) {
         invocations.append(.disapearToHomeCalled)
     }
-    
     
 }

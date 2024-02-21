@@ -11,6 +11,7 @@ import UIKit
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
+    
     // in container is find all information about products/
     var container: Array<Product> = Array()
     var presenter: ViewToPresenterHomeProtocol?
@@ -23,7 +24,7 @@ class HomeViewController: UIViewController {
     }
     
     /**this functions initialize all methods*/
-    func initFunctions(){
+    func initFunctions() {
         registerCells()
         setUpHeader()
         presenter?.startFetchingProducts(query: "tel")
@@ -46,7 +47,7 @@ class HomeViewController: UIViewController {
     }
     
     /** here register (Nibs) for before use the table*/
-    func registerCells(){
+    func registerCells() {
         let cellProduct = UINib(nibName: "ProductCell", bundle: nil)
         collectionView.register(cellProduct, forCellWithReuseIdentifier: ProductCollectionViewCell.identifier)
     }
@@ -59,6 +60,7 @@ class HomeViewController: UIViewController {
 
 }
 extension HomeViewController: PresenterToViewHomeProtocol{
+    
     /** this function receive data about of products in the query*/
     func onProductResponseSuccess(producList: Array<Product>) {
         container = producList
@@ -66,6 +68,7 @@ extension HomeViewController: PresenterToViewHomeProtocol{
             self.collectionView.reloadData()
         }
     }
+    
     /** this function receive the error in service*/
     func onMovieResponseFailed(error: String) {
         let alert = UIAlertController(title: "Alert", message: "Problem Fetching products   ", preferredStyle: UIAlertController.Style.alert)

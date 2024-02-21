@@ -11,28 +11,28 @@ import UIKit
 
 extension UIView{
     
-    func addShadow(){
+    func addShadow() {
         self.layer.shadowColor = UIColor.black.cgColor
         self.layer.shadowOpacity = 1
         self.layer.shadowOffset = CGSize(width: 2, height: 2)
     }
     
-    func addBoder(){
+    func addBoder() {
         self.layer.borderColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         self.layer.borderWidth=1
     }
     
-    func addRadius(round:CGFloat){
+    func addRadius(round:CGFloat) {
         self.layoutIfNeeded()
         layer.cornerRadius = round
         layer.masksToBounds = true
     }
     
-    func addLoading(){
+    func addLoading() {
         
     }
     
-    func removeLoading(){
+    func removeLoading() {
         self.subviews.forEach { (item) in
             item.removeFromSuperview()
         }

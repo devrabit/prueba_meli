@@ -8,6 +8,7 @@
 import Foundation
 
 struct ProductDetailCellModel {
+    
     enum CellsIds: String {
         case productPrice = "ProductPrice"
         case attributeProductCell = "AttributeProductCell"

@@ -7,6 +7,7 @@
 
 import Foundation
 class ProductServices: ProductServicesProtocol {
+    
     var repository: SearchRepositoryProtocol = SearchRepository(webService: URLSesionWebService())
     weak var delegate: ProductServicesOuputDelegate?
     
@@ -26,6 +27,5 @@ class ProductServices: ProductServicesProtocol {
             }
         }
     }
-    
     
 }

@@ -9,12 +9,13 @@ import XCTest
 @testable import MyStore
 
 class SeekerPresenterTests: XCTestCase {
+    
     var mockView: SeekerMockView!
     var mockRouter: SeekerMockRouter!
     var mockInteractor: SeekerMockInteractor!
     var sut: SeekerPresenter!
     
-    override func setUp(){
+    override func setUp() {
         super.setUp()
         mockView = SeekerMockView()
         mockRouter = SeekerMockRouter()
@@ -33,7 +34,7 @@ class SeekerPresenterTests: XCTestCase {
         sut = nil
     }
     
-    func test_validateQuery(){
+    func test_validateQuery() {
         //Given
         let expected: [SeekerMockView.Invocations] = [.validateQueryCalled]
         //When
@@ -42,7 +43,7 @@ class SeekerPresenterTests: XCTestCase {
         XCTAssertEqual(expected, mockView.invocations)
     }
     
-    func test_goToHome(){
+    func test_goToHome() {
         //Given
         let expected: [SeekerMockRouter.Invocations] = [.disapearToHomeCalled]
         //When
@@ -50,5 +51,6 @@ class SeekerPresenterTests: XCTestCase {
         //Then
         XCTAssertEqual(expected, mockRouter.invocations)
     }
+    
 }
 

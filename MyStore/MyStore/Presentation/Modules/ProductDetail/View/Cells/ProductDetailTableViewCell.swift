@@ -41,7 +41,7 @@ class ProductDetailTableViewCell: UITableViewCell {
         
     }
     
-    func setTup( item: ProductDetailCellModel){
+    func setTup( item: ProductDetailCellModel) {
         
         switch item.obj {
         case .attribute(let key, let value):

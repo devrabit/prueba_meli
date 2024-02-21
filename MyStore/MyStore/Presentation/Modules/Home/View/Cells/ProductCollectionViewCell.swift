@@ -27,7 +27,7 @@ class ProductCollectionViewCell: UICollectionViewCell {
         lblPrice?.text = nil
     }
     
-    func setUp(product: Product){
+    func setUp(product: Product) {
         lblName?.text = product.title
         lblPrice?.text = "$\((product.price?.formattedWithSeparator() ?? ""))"
         
@@ -37,6 +37,7 @@ class ProductCollectionViewCell: UICollectionViewCell {
             self?.imgPublication?.image = self?.imgPublication?.rounded
         }
     }
+    
 }
 
 

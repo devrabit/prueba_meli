@@ -8,6 +8,7 @@
 @testable import MyStore
 
 class HomeMockInteractor: PresenterToInteractorHomeProtocol {
+    
     enum Invocations {
         case fetchProductsCalled
         case fetchProductsSucces
@@ -20,8 +21,10 @@ class HomeMockInteractor: PresenterToInteractorHomeProtocol {
     func fetchProducts(query: String) {
         invocations.append(.fetchProductsCalled)
     }
+    
 }
 extension HomeMockInteractor: ProductServicesOuputDelegate {
+    
     func fetchProducts(products: [MyStore.Product]) {
         invocations.append(.fetchProductsSucces)
     }
@@ -29,6 +32,5 @@ extension HomeMockInteractor: ProductServicesOuputDelegate {
     func fetchProductsFailed(error: String) {
         invocations.append(.fetchProductsFailed)
     }
-    
-    
+
 }

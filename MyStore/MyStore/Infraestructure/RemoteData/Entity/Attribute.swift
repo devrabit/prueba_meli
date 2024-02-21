@@ -7,6 +7,7 @@
 
 import Foundation
 struct  Attribute: Codable {
+    
     var id: String?
     var value_id: String?
     var attribute_group_name: String?
@@ -14,5 +15,5 @@ struct  Attribute: Codable {
     var name: String?
     var value_name: String?
     var attribute_group_id: String?
-
+    
 }

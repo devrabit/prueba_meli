@@ -14,7 +14,7 @@ class HomeInteractorTests: XCTestCase {
     var mockProductServices: ProductServicesMock!
     var sut: HomeInteractor!
     
-    override func setUp(){
+    override func setUp() {
         super.setUp()
         mockPresenter = HomeMockPresenter()
         mockProductServices = ProductServicesMock()
@@ -32,7 +32,7 @@ class HomeInteractorTests: XCTestCase {
         
     }
     
-    func test_fetchProductsSuccess(){
+    func test_fetchProductsSuccess() {
         //Given
         let expected: [HomeMockPresenter.Invocations] = [.productFetchSuccessCalled]
         //When
@@ -41,7 +41,7 @@ class HomeInteractorTests: XCTestCase {
         XCTAssertEqual(expected,  mockPresenter.invocations)
     }
     
-    func test_fetchProductsFailed(){
+    func test_fetchProductsFailed() {
         //Given
         let expected: [HomeMockPresenter.Invocations] = [.productFetchFailedCalled]
         //When
@@ -50,7 +50,7 @@ class HomeInteractorTests: XCTestCase {
         XCTAssertEqual(expected,  mockPresenter.invocations)
     }
     
-    func test_fetchProducts(){
+    func test_fetchProducts() {
         //Given
         let expected: [ProductServicesMock.Invocations] = [.getProductsByQueryCalled]
         //When

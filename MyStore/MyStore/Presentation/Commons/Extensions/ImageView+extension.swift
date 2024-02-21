@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 extension UIImageView{
+    
     func downloadImage(from url: String) {
         print("Download Started")
         let urlParc=URL(string: url)

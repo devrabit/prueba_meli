@@ -8,7 +8,9 @@
 import Foundation
 
 struct SearchResponse: Codable {
+    
     var site_id: String?
     var query: String?
     var results: [Product]?
+    
 }

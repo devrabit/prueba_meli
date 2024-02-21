@@ -23,21 +23,21 @@ class SeekerViewController: UIViewController {
     }
     
     /** this function configure the componets in the seerker view */
-    func setUpView(){
+    func setUpView() {
         presenter?.validateQuery(text: "")
         txtSearch.delegate = self
         txtSearch.returnKeyType = UIReturnKeyType.done
     }
     
     /** excecute method for go to home module and pass query words*/
-    @objc func tapSearch(){
+    @objc func tapSearch() {
         presenter?.goToHome(query: txtSearch.text!, view: self)
     }
     
     /**
         this function cancel searchin action
      */
-    @objc func tapCancel( textfield: UITextField){
+    @objc func tapCancel( textfield: UITextField) {
         presenter?.goToHome(query: txtSearch.text!, view: self)
     }
 

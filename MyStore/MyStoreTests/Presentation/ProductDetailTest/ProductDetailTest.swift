@@ -15,7 +15,7 @@ class ProductDetailPresenterTests: XCTestCase {
     var mockInteractor: ProductDetailInteractor!
     var sut: ProductDetailPresenter!
     
-    override func setUp(){
+    override func setUp() {
         super.setUp()
         mockView = ProductDetailMockView()
         mockRouter = ProductDetailMockRouter()
@@ -34,7 +34,7 @@ class ProductDetailPresenterTests: XCTestCase {
         sut = nil
     }
     
-    func test_getProductDetail(){
+    func test_getProductDetail() {
         //Given
         let expected: [ProductDetailMockView.Invocations] = [.getProductCalled]
         //When
@@ -43,7 +43,7 @@ class ProductDetailPresenterTests: XCTestCase {
         XCTAssertEqual(mockView.invocations, expected)
     }
     
-    func test_getRowsTable(){
+    func test_getRowsTable() {
         //Given
         let expected: [ProductDetailMockView.Invocations] = [.getDataTableCalled]
         //When

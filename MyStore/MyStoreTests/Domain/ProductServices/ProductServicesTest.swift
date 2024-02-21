@@ -9,11 +9,12 @@ import XCTest
 @testable import MyStore
 
 class ProductServicesTest: XCTestCase {
+    
     var mockRepository: SearchRepositoryMock!
     var mockInteractor: HomeMockInteractor!
     var sut: ProductServices!
     
-    override func setUp(){
+    override func setUp() {
         super.setUp()
         mockRepository = SearchRepositoryMock()
         mockInteractor = HomeMockInteractor()
@@ -43,7 +44,7 @@ class ProductServicesTest: XCTestCase {
         XCTAssertEqual(expected, mockInteractor.invocations)
     }
     
-    func test_startFetchingProducts(){
+    func test_startFetchingProducts() {
         //Given
         let expected: [SearchRepositoryMock.Invocations] = [.searchItems]
         //When
@@ -51,8 +52,7 @@ class ProductServicesTest: XCTestCase {
         //Then
         XCTAssertEqual(expected, mockRepository.invocations)
     }
-    
-    
+        
 }
 
 

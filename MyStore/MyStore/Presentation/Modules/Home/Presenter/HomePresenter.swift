@@ -8,22 +8,24 @@
 import UIKit
 
 class HomePresenter: ViewToPresenterHomeProtocol{
+    
     var interactor: PresenterToInteractorHomeProtocol?
     var router: PresenterToRouterHomeProtocol?
     weak var view: PresenterToViewHomeProtocol?
+    
     /**
      here start method for fetching producs
      :params:: query- Words for search products in mercadoLibre
      */
     func startFetchingProducts(query: String) {
-        let params = "q=\(query)"
-        interactor?.fetchProducts(query: params)
+        interactor?.fetchProducts(query: query)
     }
+    
     /**
         in this function get the products and pass data to the view
         :params:: product list - later inflate collection view data
      */
-    func onProductResponseSuccess(producList: Array<Product>){
+    func onProductResponseSuccess(producList: Array<Product>) {
         view?.onProductResponseSuccess(producList: producList)
     }
     
@@ -31,9 +33,10 @@ class HomePresenter: ViewToPresenterHomeProtocol{
         in this function get the open seeker
         :params:: navigationController - navigation cotroller for present controller
      */
-    func openSeeker(navigationController: UINavigationController){
+    func openSeeker(navigationController: UINavigationController) {
         router?.openSeeker(delegate: self,navigationController: navigationController)
     }
+    
     /**
         in this function show detail module
         :params:: navigationController - navigation cotroller for push controller, product - data about the selected product

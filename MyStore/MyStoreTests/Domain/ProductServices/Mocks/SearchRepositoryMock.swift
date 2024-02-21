@@ -10,6 +10,7 @@ import Foundation
 import XCTest
 
 class SearchRepositoryMock: SearchRepositoryProtocol {
+    
     enum Invocations {
         case searchItems
     }

@@ -15,7 +15,7 @@ class HomePresenterTests: XCTestCase {
     var mockInteractor: HomeMockInteractor!
     var sut: HomePresenter!
     
-    override func setUp(){
+    override func setUp() {
         super.setUp()
         mockView = HomeMockView()
         mockRouter = HomeMockRouter()
@@ -34,7 +34,7 @@ class HomePresenterTests: XCTestCase {
         sut = nil
     }
     
-    func test_startFetchingProducts(){
+    func test_startFetchingProducts() {
         //Given
         let expected: [HomeMockInteractor.Invocations] = [.fetchProductsCalled]
         //When
@@ -43,7 +43,7 @@ class HomePresenterTests: XCTestCase {
         XCTAssertEqual(expected, mockInteractor.invocations)
     }
     
-    func test_onProductResponseSuccess(){
+    func test_onProductResponseSuccess() {
         //Given
         let expected: [HomeMockView.Invocations] = [.onProductResponseSuccessCalled]
         //When
@@ -52,7 +52,7 @@ class HomePresenterTests: XCTestCase {
         XCTAssertEqual(expected, mockView.invocations)
     }
     
-    func test_openSeeker(){
+    func test_openSeeker() {
         //Given
         let expected: [HomeMockRouter.Invocations] = [.openSeekerCalled]
         //When
@@ -61,7 +61,7 @@ class HomePresenterTests: XCTestCase {
         XCTAssertEqual(expected, mockRouter.invocations)
     }
     
-    func test_showProducDetail(){
+    func test_showProducDetail() {
         //Given
         let expected: [HomeMockRouter.Invocations] = [.pushProductDetailCalled]
         //When

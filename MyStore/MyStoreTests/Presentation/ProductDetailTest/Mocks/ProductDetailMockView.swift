@@ -23,4 +23,5 @@ class ProductDetailMockView: PresenterToViewProductDetailProtocol {
     func getDataTable(container: [ProductDetailCellModel]) {
         invocations.append(.getDataTableCalled)
     }
+    
 }

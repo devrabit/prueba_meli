@@ -8,7 +8,8 @@
 import UIKit
 @testable import MyStore
 
-class HomeMockRouter: PresenterToRouterHomeProtocol{
+class HomeMockRouter: PresenterToRouterHomeProtocol {
+    
     enum Invocations {
         case openSeekerCalled
         case pushProductDetailCalled

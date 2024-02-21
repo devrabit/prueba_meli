@@ -9,10 +9,12 @@ import Foundation
 import UIKit
 
 class ProductDetailRouter: PresenterToRouterProductDetailProtocol{
+    
     /// this var get the  product detail storyboard
     static var storyboard: UIStoryboard{
         return UIStoryboard(name:"ProductDetail", bundle: Bundle.main)
     }
+    
     /** instantiate the product detail module*/
     static func createModule(product: Product) -> ProductDetailViewController {
         let view = ProductDetailRouter.storyboard.instantiateViewController(withIdentifier: "ProductDetailViewController") as! ProductDetailViewController
@@ -30,4 +32,5 @@ class ProductDetailRouter: PresenterToRouterProductDetailProtocol{
         
         return view
     }
+    
 }

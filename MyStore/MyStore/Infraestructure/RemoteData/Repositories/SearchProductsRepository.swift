@@ -6,9 +6,11 @@
 //
 
 import Foundation
+
 protocol SearchRepositoryProtocol {
     func searchItems(with query: String, completion: @escaping (Result<SearchResponse, RepositoryError>) -> Void)
 }
+
 class SearchRepository: SearchRepositoryProtocol {
     private let webService: WebServiceProtocol
     init(webService: WebServiceProtocol) {

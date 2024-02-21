@@ -21,4 +21,5 @@ class ProductServicesMock: ProductServicesProtocol {
         (!query.isEmpty) ? delegate?.fetchProducts(products: []) : delegate?.fetchProductsFailed(error: "")
         invocations.append(.getProductsByQueryCalled)
     }
+    
 }

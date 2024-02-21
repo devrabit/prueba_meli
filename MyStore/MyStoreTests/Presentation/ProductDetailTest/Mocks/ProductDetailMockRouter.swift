@@ -18,4 +18,5 @@ class ProductDetailMockRouter: PresenterToRouterProductDetailProtocol {
     static func createModule(product: Product) -> ProductDetailViewController {
         ProductDetailViewController()
     }
+    
 }

@@ -26,4 +26,5 @@ class HomeMockPresenter: InteractorToPresenterHomeProtocol {
     func productFetchFailed(error: String) {
         invocations.append(.productFetchFailedCalled)
     }
+    
 }
