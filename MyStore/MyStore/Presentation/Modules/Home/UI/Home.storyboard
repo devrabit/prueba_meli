@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mi tienda-->
+        <scene sceneID="Uef-0b-07S">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" title="Mi tienda" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gCs-kK-aIh" customClass="HomeViewController" customModule="MyStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="otz-UN-fRL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3R4-X9-EdG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="826.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="5" id="d5s-X2-bde">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="gCs-kK-aIh" id="o0E-kS-vJa"/>
+                                    <outlet property="delegate" destination="gCs-kK-aIh" id="fAQ-TF-jDY"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TEZ-UW-uhB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3R4-X9-EdG" firstAttribute="width" secondItem="TEZ-UW-uhB" secondAttribute="width" multiplier="0.903382" constant="40" id="3K6-fB-SPC"/>
+                            <constraint firstItem="3R4-X9-EdG" firstAttribute="centerX" secondItem="TEZ-UW-uhB" secondAttribute="centerX" id="Cdr-IO-roG"/>
+                            <constraint firstItem="3R4-X9-EdG" firstAttribute="top" secondItem="TEZ-UW-uhB" secondAttribute="top" id="DJ6-p3-CKE"/>
+                            <constraint firstItem="3R4-X9-EdG" firstAttribute="height" secondItem="TEZ-UW-uhB" secondAttribute="height" multiplier="1.01034" id="TCg-Yi-nyP"/>
+                        </constraints>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="collectionView" destination="3R4-X9-EdG" id="C0a-Cp-OZs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zPN-Px-GWG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="295.6521739130435" y="142.63392857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
