@@ -120,7 +120,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "37472509-0B52-431C-B82E-FEC80FF071E9"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyStoreTests/Presentation/HomeTest/HomePresenterTest.swift"
@@ -130,6 +130,54 @@
             endingLineNumber = "43"
             landmarkName = "test_startFetchingProducts()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "08B622AB-D5D3-4752-8AF2-249AA0FCB8DE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MyStoreTests/Domain/ProductTest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "testGetPrice()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "08B622AB-D5D3-4752-8AF2-249AA0FCB8DE - e74a6561f2fd794"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyStoreTests.ProductTest.testGetPrice() -&gt; ()"
+                  moduleName = "MyStoreTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andreycarreno/Desktop/Andrey/git/prueba_meli/MyStore/MyStoreTests/Domain/ProductTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "727">
+               </Location>
+               <Location
+                  uuid = "08B622AB-D5D3-4752-8AF2-249AA0FCB8DE - 5719ab9b3683459b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MyStoreTests.ProductTest.testGetPriceWithFormat() -&gt; ()"
+                  moduleName = "MyStoreTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andreycarreno/Desktop/Andrey/git/prueba_meli/MyStore/MyStoreTests/Domain/ProductTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "727">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

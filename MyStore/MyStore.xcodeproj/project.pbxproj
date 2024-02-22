@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9001056E2B87B67F006B6039 /* ProductTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9001056D2B87B67F006B6039 /* ProductTest.swift */; };
 		9075B6FF2B85A9E70015C13C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9075B6FE2B85A9E70015C13C /* AppDelegate.swift */; };
 		9075B7012B85A9E70015C13C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9075B7002B85A9E70015C13C /* SceneDelegate.swift */; };
 		9075B7032B85A9E70015C13C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9075B7022B85A9E70015C13C /* ViewController.swift */; };
@@ -94,6 +95,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9001056D2B87B67F006B6039 /* ProductTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTest.swift; sourceTree = "<group>"; };
 		9075B6FB2B85A9E70015C13C /* MyStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9075B6FE2B85A9E70015C13C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9075B7002B85A9E70015C13C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -192,6 +194,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9001056C2B87B658006B6039 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				9001056D2B87B67F006B6039 /* ProductTest.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 		9075B6F22B85A9E70015C13C = {
 			isa = PBXGroup;
 			children = (
@@ -232,7 +242,7 @@
 		9075B7142B85A9EB0015C13C /* MyStoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				9075B7E02B85DC940015C13C /* Domain */,
+				9001056C2B87B658006B6039 /* Domain */,
 				9075B7DF2B85DC830015C13C /* Presentation */,
 				9075B7152B85A9EB0015C13C /* MyStoreTests.swift */,
 			);
@@ -340,6 +350,7 @@
 		9075B74E2B85B0680015C13C /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				9075B7AA2B85C35E0015C13C /* Services */,
 				9075B7882B85C25E0015C13C /* Commons */,
 				9075B74F2B85B0820015C13C /* Modules */,
 			);
@@ -555,7 +566,6 @@
 		9075B79A2B85C35E0015C13C /* RemoteData */ = {
 			isa = PBXGroup;
 			children = (
-				9075B7422B85AD020015C13C /* Entity */,
 				9075B79B2B85C35E0015C13C /* WebServices */,
 				9075B7A32B85C35E0015C13C /* Repositories */,
 			);
@@ -608,7 +618,7 @@
 		9075B7A92B85C35E0015C13C /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				9075B7AA2B85C35E0015C13C /* Services */,
+				9075B7422B85AD020015C13C /* Entity */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -701,19 +711,12 @@
 		9075B7DF2B85DC830015C13C /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				9075B7E12B85DCA30015C13C /* ProductServices */,
 				9075B7CF2B85D2D80015C13C /* HomeTest */,
 				9075B7C52B85CF980015C13C /* SeekerTest */,
 				9075B7BB2B85CBF50015C13C /* ProductDetailTest */,
 			);
 			path = Presentation;
-			sourceTree = "<group>";
-		};
-		9075B7E02B85DC940015C13C /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				9075B7E12B85DCA30015C13C /* ProductServices */,
-			);
-			path = Domain;
 			sourceTree = "<group>";
 		};
 		9075B7E12B85DCA30015C13C /* ProductServices */ = {
@@ -915,6 +918,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9001056E2B87B67F006B6039 /* ProductTest.swift in Sources */,
 				9075B7DC2B85D3790015C13C /* HomeInteractorTest.swift in Sources */,
 				9075B7E62B85DEA20015C13C /* SearchRepositoryMock.swift in Sources */,
 				9075B7C02B85CC660015C13C /* ProductDetailMockRouter.swift in Sources */,

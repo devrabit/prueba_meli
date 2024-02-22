@@ -37,8 +37,8 @@ class ProductDetailPresenter: ViewToPresenterProductDetailProtocol{
                             cellId: .productPrice,
                             height: 139,
                             obj: .price(
-                                price: "\(product?.price?.formattedWithSeparator() ?? "")",
-                                oldPrice: "\(product?.original_price?.formattedWithSeparator() ?? "")",
+                                price: product?.getPriceWithFormat() ?? "",
+                                oldPrice: product?.getOriginaPriceWithFormat() ?? "",
                                 name: product?.title ?? ""
                             )
         ))

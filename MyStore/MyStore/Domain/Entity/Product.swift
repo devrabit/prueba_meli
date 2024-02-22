@@ -35,4 +35,12 @@ struct Product: Codable {
     var use_thumbnail_id: Bool?
     var order_backend: Int?
     
+    func getPriceWithFormat() -> String {
+        "$\((price?.formattedWithSeparator() ?? ""))"
+    }
+ 
+    func getOriginaPriceWithFormat() -> String {
+        "$\((original_price?.formattedWithSeparator() ?? ""))"
+    }
+    
 }
